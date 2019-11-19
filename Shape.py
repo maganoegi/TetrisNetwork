@@ -69,7 +69,15 @@ class Г (Shape):
     #               2: ... x2   
     #               3: ... x3 
     self.__subStrings = [
-        ("", 0, 0)
+        ("eeuwx", 10, 0),
+        ("euwx", 9, 0), ("eeuwn", 9, 0), ("ynuw", 9, 1), ("ynxww", 9, 2),
+        ("uwx", 8, 0), ("euwn", 8, 0), ("nnuw", 8, 1), ("ynu", 8, 1), ("nnxww", 8, 1),
+        ("uwn", 7, 0), ("nnu", 7, 1), ("ynxw", 7, 2),
+        ("eynx", 6, 3), ("nnxw", 6, 2),
+        ("xwx", 5, 0), ("yny", 5, 1), ("ynx", 5, 2), ("eynn", 5, 3), ("ynx", 5, 3),
+        ("xwn", 4, 0), ("nny", 4, 1), ("nnx", 4, 2), ("ynn", 4, 3), ("nnx", 4, 3),
+        ("yn", 3, 2),  ("nnn", 3, 3),
+        ("nn", 2, 2),
     ]
     def __init__(self):
         pass
@@ -86,12 +94,20 @@ class L (Shape):
     # [0] => string
     # [1] => score
     # [2] => rotational orientation:
-    #               0: Г   
+    #               0: L  
     #               1: clockwise turn x1    
     #               2: ... x2   
     #               3: ... x3 
     self.__subStrings = [
-        ("", 0, 0)
+        ("yeuww", 10, 2),
+        ("yeuw", 9, 2), ("neuww", 9, 2), ("eeynx", 9, 0), ("eunx", 9, 1),
+        ("eunn", 8, 1), ("unx", 8, 1), ("neuw", 8, 2), ("yeu", 8, 2), ("eeynn", 8, 0),
+        ("unn", 7, 1), ("neu", 7, 2), ("eynx", 7, 0),
+        ("ynxw", 6, 3), ("eynn", 6, 0),
+        ("xnx", 5, 1), ("yey", 5, 2), ("ynx", 5, 3), ("nnxw", 5, 3), ("ynx", 5, 0),
+        ("xnn", 4, 1), ("ney", 4, 2), ("nnx", 4, 3), ("ynn", 4, 3), ("ynn", 4, 0),
+        ("nnn", 3, 3),  ("nx", 3, 0),
+        ("nn", 2, 0),
     ]
     def __init__(self):
         pass
@@ -108,12 +124,13 @@ class Square (Shape):
     # [0] => string
     # [1] => score
     # [2] => rotational orientation:
-    #               0: Г   
-    #               1: clockwise turn x1    
-    #               2: ... x2   
-    #               3: ... x3 
+    #               0: square
     self.__subStrings = [
-        ("", 0, 0)
+        ("eyxw", 6, 0),
+        ("eyx", 5, 0), ("yxw", 5, 0), 
+        ("yx", 4, 0), ("eyn", 4, 0), ("nxw", 4, 0), 
+        ("yn", 3, 0), ("ny", 3, 0), 
+        ("nn", 2, 0),  
     ]
     def __init__(self):
         pass
@@ -130,12 +147,17 @@ class Z (Shape):
     # [0] => string
     # [1] => score
     # [2] => rotational orientation:
-    #               0: Г   
+    #               0: Z
     #               1: clockwise turn x1    
-    #               2: ... x2   
-    #               3: ... x3 
     self.__subStrings = [
-        ("", 0, 0)
+        ("euxw", 9, 1), 
+        ("eux", 8, 1), ("uxw", 8, 1), 
+        ("eun", 7, 1), ("ux", 7, 1), 
+        ("yyx", 6, 0), ("un", 6, 1), 
+        ("yyn", 5, 0), ("nyx", 5, 0), ("xxw", 5, 1), 
+        ("nyn", 4, 0), ("xx", 4, 1), 
+        ("nx", 3, 0), ("xn", 3, 1), 
+        ("nn", 2, 0), 
     ]
     def __init__(self):
         pass
@@ -152,12 +174,17 @@ class S (Shape):
     # [0] => string
     # [1] => score
     # [2] => rotational orientation:
-    #               0: Г   
+    #               0: S
     #               1: clockwise turn x1    
-    #               2: ... x2   
-    #               3: ... x3 
     self.__subStrings = [
-        ("", 0, 0)
+        ("eyuw", 9, 1), 
+        ("yuw", 8, 1), ("eyu", 8, 1), 
+        ("nuw", 7, 1), ("yu", 7, 1), 
+        ("yxx", 6, 0), ("nu", 6, 1), 
+        ("nxx", 5, 0), ("yxn", 5, 0), ("eyy", 5, 1), 
+        ("nxn", 4, 0), ("yy", 4, 1), 
+        ("yn", 3, 0), ("ny", 3, 1), 
+        ("nn", 2, 0), 
     ]
     def __init__(self):
         pass
@@ -174,12 +201,18 @@ class T (Shape):
     # [0] => string
     # [1] => score
     # [2] => rotational orientation:
-    #               0: Г   
+    #               0: T 
     #               1: clockwise turn x1    
     #               2: ... x2   
     #               3: ... x3 
     self.__subStrings = [
-        ("", 0, 0)
+        ("eeux", 9, 3), ("yuww", 9, 1), ("yux", 9, 0), 
+        ("yun", 8, 0), ("nux", 8, 0), ("eeun", 8, 3), ("eux", 8, 3), ("nuww", 8, 1), ("yuw", 8, 1), 
+        ("nun", 7, 0), ("yu", 7, 1), ("nuw", 7, 1), ("ux", 7, 3), ("eun", 7, 3), 
+        ("un", 6, 3), ("nu", 6, 1), 
+        ("xnx", 5, 3), ("yny", 5, 1), ("ynx", 5, 2), 
+        ("ynn", 4, 2), ("nnx", 4, 2), 
+        ("nnn", 3, 2), ("xn", 3, 3), ("ny", 3, 1), 
     ]
     def __init__(self):
         pass
