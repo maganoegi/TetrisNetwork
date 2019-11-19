@@ -5,22 +5,36 @@ class Shape:
 
 
 class I (Shape):        #   ====
-    pass
+    self.__properties = (10, 2)
+    def __init__(self):
+        pass
 
 class Г (Shape):        #   Г
-    pass
+    self.__properties = (9, 4)
+    def __init__(self):
+        pass
 
 class L (Shape):        #   L
-    pass
+    self.__properties = (9, 4)
+    def __init__(self):
+        pass
 
 class Square (Shape):   #   []
-    pass
+    self.__properties = (8, 1)
+    def __init__(self):
+        pass
 
 class Z (Shape):        #   Z
-    pass
+    self.__properties = (8, 2)
+    def __init__(self):
+        pass
 
 class S (Shape):        #   S
-    pass
+    self.__properties = (8, 2)
+    def __init__(self):
+        pass
 
 class T (Shape):        #   T
-    pass
+    self.__properties = (8, 4)
+    def __init__(self):
+        pass
