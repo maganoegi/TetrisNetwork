@@ -6,9 +6,6 @@
 
 
 
-''' =====================================================================================================================================
-===================================================================================================================================== '''
-
 '''  
        ./=======================================================================\.
         |           N                N,W,E,S = 1 pt                             | 
@@ -40,8 +37,8 @@ class Shape:
     def getNbRotations(self):
         return self.properties[1]
     
-    def getBestString(self):
-        return self.subStrings[0][0]
+    def getStringArray(self):
+        return self.subStrings
 
 ''' =====================================================================================================================================
 ===================================================================================================================================== '''
@@ -67,7 +64,7 @@ class I (Shape):
 ''' =====================================================================================================================================
 ===================================================================================================================================== '''
 
-class Г (Shape):
+class G (Shape):
     def __init__(self):
         super().__init__(
             (9, 4), [
@@ -165,7 +162,15 @@ class T (Shape):
             ])
 
 
-i = I()
-print("\nbest substring I = " + i.getBestString())
-l = L()
-print("\nbest substring L = " + l.getBestString())
+current_shape = T()
+substrings = current_shape.getStringArray()
+layout_string = "xneyxwwnyxnn"
+for i in range(len(substrings)):
+    index_substring = layout_string.find(substrings[i][0])
+    if index_substring > 0:
+        print("\nPosition found!!\n\tString: " + substrings[i][0] + "\n\tLocation: " + str(index_substring) + "\n\tValue: " + str(substrings[i][1]) + "/" + str(substrings[0][1]) + "\n\tRotational Config: " + str(substrings[i][2]))
+        break
+    else:
+        print("None found")
+
+    
