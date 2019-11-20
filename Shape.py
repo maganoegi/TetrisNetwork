@@ -165,6 +165,20 @@ class T (Shape):
 current_shape = T()
 substrings = current_shape.getStringArray()
 layout_string = "xneyxwwnyxnn"
+
+# current_elevation = 0  DOES NOT WORK AS DOES NOT GIVE USABLE LATERAL COORDINATES
+# elevation_array = [0]
+# for i in range(len(layout_string)):
+#     char_at_index = layout_string[i]
+#     if char_at_index == 'x' or char_at_index == 'w' or char_at_index == 'u':
+#         current_elevation += 1
+#     elif char_at_index == 'y' or char_at_index == 'e':
+#         current_elevation -= 1
+
+#     elevation_array.append(current_elevation)
+
+print(str(elevation_array))
+
 for i in range(len(substrings)):
     index_substring = layout_string.find(substrings[i][0])
     if index_substring > 0:
@@ -172,5 +186,7 @@ for i in range(len(substrings)):
         break
     else:
         print("None found")
+
+
 
     
